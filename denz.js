@@ -2497,7 +2497,7 @@ async function starts() {
 						teks += `╠➥ @${mem.jid.split('@')[0]} wa.me/${mem.jid.split('@')[0]}\n`
 						members_id.push(mem.jid)
 					}
-					mentions(`╔═══✪ Tag By *${pushname2}* ✪══`+ teks +'╚═══〘 DNS BOT 〙═══', members_id, true)
+					mentions(`╔═══✪ Tag By *${pushname2}* ✪══`+ teks +'╚═══〘 𝙼𝚎𝚐𝚞𝚖𝚒𝚗 𝙱𝙾𝚃 〙═══', members_id, true)
 					break
 			    case 'mentionall':
 			    if (isBanned) return reply(mess.only.benned)    
@@ -2511,7 +2511,7 @@ async function starts() {
 						teks += `╠➥ @${mem.jid.split('@')[0]}\n`
 						members_id.push(mem.jid)
 					}
-					mentions(`╔══〘  *${body.slice(12)}*  〙✪══`+teks+'╚═〘 DNS BOT 〙', members_id, true)
+					mentions(`╔══〘  *${body.slice(12)}*  〙✪══`+teks+'╚═〘 𝙼𝚎𝚐𝚞𝚖𝚒𝚗 𝙱𝙾𝚃 〙', members_id, true)
 					break
 			    case 'kbbi':
 			    if (isBanned) return reply(mess.only.benned)    
@@ -2558,7 +2558,7 @@ async function starts() {
 					for (let _ of anu) {
 						denz.deleteChat(_.jid)
 					}
-					reply(`\`\`\`Sukses delete all chat DNS BOT\`\`\``)
+					reply(`\`\`\`Sukses delete all chat 𝙼𝚎𝚐𝚞𝚖𝚒𝚗 𝙱𝙾𝚃\`\`\``)
 					break
                                 case 'bcgc':
 					denz.updatePresence(from, Presence.composing) 
@@ -3696,7 +3696,7 @@ case 'husbu':
 						console.log(muehe)
 						reply(muehe)
 					} else {
-						console.log(color('[DNSBOT]','aqua'), 'Command Tidak Terdaftar', color(sender.split('@')[0]))
+						console.log(color('[𝙼𝚎𝚐𝚞𝚖𝚒𝚗 𝙱𝙾𝚃]','aqua'), 'Command Tidak Terdaftar', color(sender.split('@')[0]))
 					}
                            }
 		} catch (e) {
