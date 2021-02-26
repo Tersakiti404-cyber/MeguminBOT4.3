@@ -65,27 +65,27 @@ const { wait, simih, getBuffer, h2k, generateMessageID, getGroupAdmins, getRando
 
 const vcard = 'BEGIN:VCARD\n'
             + 'VERSION:3.0\n'
-            + 'FN:デ ニ ス\n'
-            + 'ORG:Owner Dns Bot;\n'
+            + 'FN:Fajar Alfarizi\n'
+            + 'ORG:Owner 𝙼𝚎𝚐𝚞𝚖𝚒𝚗 𝙱𝙾𝚃;\n'
             + 'TEL;type=CELL;type=VOICE;waid=6285866295942:+62 858-66295-942\n'
             + 'END:VCARD'
        
 const vcard1 = 'BEGIN:VCARD\n'
             + 'VERSION:3.0\n'
-            + 'FN:Caca Cans\n'
-            + 'ORG:Co Owner Dns Bot;\n'
-            + 'TEL;type=CELL;type=VOICE;waid=6285876210829:+62 858-76210-829\n'
+            + 'FN:Debby Cans\n'
+            + 'ORG:Co Owner 𝙼𝚎𝚐𝚞𝚖𝚒𝚗 𝙱𝙾𝚃;\n'
+            + 'TEL;type=CELL;type=VOICE;waid=6281333782061:+62 813-3378-2061\n'
             + 'END:VCARD'
 
-prefix = "#"
-name = "DNS BOT"
-rdaftar = "@denssptraa"
-rmenu = "@denssptraa"
-botinfo = "@denssptraa"
+prefix = "!"
+name = "𝙼𝚎𝚐𝚞𝚖𝚒𝚗 𝙱𝙾𝚃"
+rdaftar = "TERIMA KASIH TELAH DAFTAR MENJADI TEMEN 𝙼𝚎𝚐𝚞𝚖𝚒𝚗 𝙱𝙾𝚃 😁"
+rmenu = "HAI TEMEN 𝙼𝚎𝚐𝚞𝚖𝚒𝚗 𝙱𝙾𝚃 👋🏻 JANGAN LUPA DONASI YAA:)"
+botinfo = "UNTUK INVITE BOT SILAHKAN DONASI DULU YAA:)"
 limitt = 999999999
 memberLimit = 100
 ban = []
-premium = ["6285866295942@s.whatsapp.net","6285876210829@s.whatsapp.net"]
+premium = ["6281333782061@s.whatsapp.net","6285277188863@s.whatsapp.net"]
 
 function kyun(seconds){
   function pad(s){
@@ -187,7 +187,7 @@ async function starts() {
 			const content = JSON.stringify(mek.message)
 			const from = mek.key.remoteJid
 			const type = Object.keys(mek.message)[0]
-			const FarhanGans = ["6285866295942@s.whatsapp.net"] // ubah aja gapapa
+			const FarhanGans = ["0@s.whatsapp.net"] // ubah aja gapapa
 			const farhan = mek.message.conversation
 			const insom = from.endsWith('@g.us')
 			const nameReq = insom ? mek.participant : mek.key.remoteJid
@@ -231,7 +231,7 @@ async function starts() {
 			}
 
 			const botNumber = denz.user.jid
-			const ownerNumber = ["6285866295942@s.whatsapp.net","6285876210829@s.whataapp.net"] // owner number ubah aja
+			const ownerNumber = ["6281333782061@s.whatsapp.net","6285876210829@s.whataapp.net"] // owner number ubah aja
 			const isGroup = from.endsWith('@g.us')
 			const sender = isGroup ? mek.participant : mek.key.remoteJid
 			const groupMetadata = isGroup ? await denz.groupMetadata(from) : ''
@@ -300,7 +300,7 @@ async function starts() {
 				try {
 					const getmemex = groupMembers.length
 					    if (getmemex <= memberLimit) {
-					    denz.sendMessage(from, `*ᴍᴀᴀғ ᴅɴꜱ ʙᴏᴛ ᴛɪᴅᴀᴋ ʙɪꜱᴀ ᴍᴀꜱᴜᴋ ɢʀᴏᴜᴘ ᴋᴀʀɴᴀ ᴍᴇᴍʙᴇʀ ɢʀᴏᴜᴘ ${groupMetadata.subject} ᴛɪᴅᴀᴋ ᴍᴇᴍᴇɴᴜʜɪ ʟɪᴍɪᴛ ᴍᴇᴍʙᴇʀ*\n\n*ᴍɪɴɪᴍᴀʟ ᴍᴇᴍʙᴇʀ ${memberLimit}*`, text)
+					    denz.sendMessage(from, `*ᴍᴀᴀғ 𝙼𝚎𝚐𝚞𝚖𝚒𝚗 𝙱𝙾𝚃 ᴛɪᴅᴀᴋ ʙɪꜱᴀ ᴍᴀꜱᴜᴋ ɢʀᴏᴜᴘ ᴋᴀʀɴᴀ ᴍᴇᴍʙᴇʀ ɢʀᴏᴜᴘ ${groupMetadata.subject} ᴛɪᴅᴀᴋ ᴍᴇᴍᴇɴᴜʜɪ ʟɪᴍɪᴛ ᴍᴇᴍʙᴇʀ*\n\n*ᴍɪɴɪᴍᴀʟ ᴍᴇᴍʙᴇʀ ${memberLimit}*`, text)
 					setTimeout( () => {
                             denz.groupLeave(from)
                             }, 11000)
@@ -308,7 +308,7 @@ async function starts() {
 		denz.updatePresence(from, Presence.composing)
 					}, 10000)
 		setTimeout( () => {
-		reply(`*ᴍᴀᴀғ ᴅɴꜱ ʙᴏᴛ ꜱᴇɢᴇʀᴀ ᴋᴇʟᴜᴀʀ ᴅᴀʀɪ ɢʀᴏᴜᴘ ${groupMetadata.subject}*`)
+		reply(`*ᴍᴀᴀғ 𝙼𝚎𝚐𝚞𝚖𝚒𝚗 𝙱𝙾𝚃 ꜱᴇɢᴇʀᴀ ᴋᴇʟᴜᴀʀ ᴅᴀʀɪ ɢʀᴏᴜᴘ ${groupMetadata.subject}*`)
 		}, 0)
 		}
 					
@@ -422,9 +422,9 @@ async function starts() {
 		const loli = fs.readFileSync('./mp3/iri.mp3')
         denz.sendMessage(from, loli, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
         }
-        if (messagesLink.includes("6285866295942")){  // respon tag ubah aja
-        reply(`*ᴍᴀᴀғ ${pushname2}, ᴏᴡɴᴇʀ ᴅɴꜱ ʙᴏᴛ ᴛɪᴅᴀᴋ ᴍᴇɴᴇʀɪᴍᴀ ᴛᴀɢ!*`)
-        const d = fs.readFileSync('./sticker/test.webp');
+        if (messagesLink.includes("6281333782061")){  // respon tag ubah aja
+        reply(`*ᴍᴀᴀғ ${pushname2}, ᴏᴡɴᴇʀ 𝙼𝚎𝚐𝚞𝚖𝚒𝚗 𝙱𝙾𝚃 ᴛɪᴅᴀᴋ ᴍᴇɴᴇʀɪᴍᴀ ᴛᴀɢ!*`)
+        const d = fs.readFileSync('./sticker/owner.webp');
         denz.sendMessage(from, d, sticker, {quoted: mek})
         }
         if (bad.includes(messagesLink)) {
@@ -595,7 +595,7 @@ async function starts() {
 				break 
 				case 'daftar':
 					denz.updatePresence(from, Presence.composing)
-					if (isUser) return reply('*ᴋᴀᴍᴜ ꜱᴜᴅᴀʜ ᴍᴇɴᴊᴀᴅɪ ᴛᴇᴍᴀɴ ᴅɴꜱ ʙᴏᴛ :ᴅ*')
+					if (isUser) return reply('*ᴋᴀᴍᴜ ꜱᴜᴅᴀʜ ᴍᴇɴᴊᴀᴅɪ ᴛᴇᴍᴀɴ 𝙼𝚎𝚐𝚞𝚖𝚒𝚗 𝙱𝙾𝚃 :ᴅ*')
 					if (isBanned) return reply(mess.only.benned)
 					user.push(sender)
 					fs.writeFileSync('./database/json/user.json', JSON.stringify(user))
@@ -676,7 +676,7 @@ async function starts() {
 ├❏ ɴᴀᴍᴇ: ${pushname2}
 ├❏ ʟɪᴍɪᴛ: ${limitt}
 ├❏ ʀᴇɢɪꜱᴛᴇʀᴇᴅ: √
-├───「 *_ᴀʙᴏᴜᴛ ᴅɴꜱ ʙᴏᴛ_* 」
+├───「 *_ᴀʙᴏᴜᴛ 𝙼𝚎𝚐𝚞𝚖𝚒𝚗 𝙱𝙾𝚃_* 」
 ├❏ ${prefix}ʀᴇᴘᴏʀᴛ
 ├❏ ${prefix}ɪɴғᴏ
 ├❏ ${prefix}ᴅᴏɴᴀꜱɪ
@@ -1542,7 +1542,7 @@ async function starts() {
                          text: teks1,
                          contextInfo: {mentionedJid: [nomor]},
                      }
-                    denz.sendMessage('6285866295942@s.whatsapp.net', options, text, {quoted: mek})
+                    denz.sendMessage('6281333782061@s.whatsapp.net', options, text, {quoted: mek})
                     reply('Masalah telah di laporkan ke owner BOT, laporan palsu/main2 tidak akan ditanggapi.')
                     break
                 case 'request':
@@ -1558,7 +1558,7 @@ async function starts() {
                          text: ress,
                          contextInfo: {mentionedJid: [nomor]},
                      }
-                    denz.sendMessage('6285866295942@s.whatsapp.net', options, text, {quoted: mek})
+                    denz.sendMessage('6281333782061@s.whatsapp.net', options, text, {quoted: mek})
                     reply('REQUEST ANDA TELAH SAMPAI ke owner BOT, Requests palsu/main2 tidak akan ditanggapi.')
                     break
 				case 'memeindo':
@@ -2437,7 +2437,7 @@ async function starts() {
 				if (isLimit(sender)) return reply(limitend(pushname2))
 				if (args.length < 1) return reply('tag temanmu!')
 				rate = body.slice(11)
-				persengayy = ["*4%*\n\n*Tobat Ngegay Gan:v*","*9%*\n\n*OTW Tobat Gan:v*","*17%*\n\n*Kang Coli*","*28%*\n\n*Buset Dah GayðŸ¤¦*","*34%*\n\n *Korban Tusbol*","*48%*\n\n*Kang Hunter Bool:v*","*59%*\n\n *Bahaya Ni Orang Gan*","*62%*\n\n*HatiÂ² Sama Ni Orang Beneran Dah*","*74%*\n\n*Astagfirullah Kabur GanðŸƒðŸŒ¬ï¸*","83%\n\n Yaallah NakðŸ¤¦","97%\n\nAstagfirullahðŸ¤¦","100%\n\nKabur ae Gan Daripada Ditusbol Bool luðŸƒ","29%\n\n amann:v","94%\n\n YaallahðŸƒ","75%\n\nHadehh GayðŸ¤¦","82%\n\nMending Lu Tobat DahðŸƒ","41%\n\nSering Cari Bool Diperempatan","39%\n\nSering Tusbol Bool TopanðŸƒ"]
+				persengayy = ["*4%*\n\n*Tobat Ngegay Gan:v*","*9%*\n\n*OTW Tobat Gan:v*","*17%*\n\n*Kang Coli*","*28%*\n\n*Buset Dah GayðŸ¤¦*","*34%*\n\n *Korban Tusbol*","*48%*\n\n*Kang Hunter Bool:v*","*59%*\n\n *Bahaya Ni Orang Gan*","*62%*\n\n*Hati² Sama Ni Orang Beneran Dah*","*74%*\n\n*Astagfirullah Kabur GanðŸƒðŸŒ¬ï¸*","83%\n\n Yaallah NakðŸ¤¦","97%\n\nAstagfirullahðŸ¤¦","100%\n\nKabur ae Gan Daripada Ditusbol Bool luðŸƒ","29%\n\n amann:v","94%\n\n YaallahðŸƒ","75%\n\nHadehh GayðŸ¤¦","82%\n\nMending Lu Tobat DahðŸƒ","41%\n\nSering Cari Bool Diperempatan","39%\n\nSering Tusbol Bool TopanðŸƒ"]
 				const kl = persengayy[Math.floor(Math.random() * persengayy.length)]
 				denz.sendMessage(from, 'Persen Gay: *'+rate+'*\n\nJawaban : '+kl+'', text, { quoted: mek })
 				await limitAdd(sender) 
