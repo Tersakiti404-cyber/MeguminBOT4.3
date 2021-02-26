@@ -658,7 +658,7 @@ async function starts() {
 					user.push(sender)
 					uptime = process.uptime()
 					teks = `➽ *ɴᴀᴍᴀ ʙᴏᴛ* : ${me.name}\n➽ *ᴏᴡɴᴇʀ ʙᴏᴛ* : @${ownerNumber}\n➽ *ᴘʀᴇғɪx* : | ${prefix} |\n➽ *ᴛᴏᴛᴀʟ ʙʟᴏᴄᴋ* : ${blocked.length}\n➽ *ᴀᴋᴛɪғ ꜱᴇᴊᴀᴋ* : ${kyun(uptime)}\n➽ *ᴛᴏᴛᴀʟ ᴘᴇɴɢɢᴜɴᴀ* : ${user.length} ᴜꜱᴇʀ\n➽ *ɪɴꜱᴛᴀɢʀᴀᴍ* : https://www.instagram.com/denssptraa\n➽ *ꜱᴘᴇᴄɪᴀʟ ᴛʜᴀɴᴋꜱ ᴛᴏ* :\n➽ ᴀʟʟᴀʜ ꜱᴡᴛ\n➽ ғxᴄ7\n➽ ᴍʜᴀɴᴋʙᴀʀʙᴀʀ\n➽ ᴀɴᴋᴇʀ\n➽ ᴅᴀɴᴇɴᴅʀᴀ\n➽ ɪʟʜᴀᴍ\n➽ ʏᴏɢᴀ ꜱᴀᴋᴛɪ`
-					const daca = fs.readFileSync('dns.jpg');
+					const daca = fs.readFileSync('megumin.jpg');
 				    denz.sendMessage(from, daca, image, {quoted: mek, caption: teks})
 					break 
 					case 'menu':
@@ -907,7 +907,7 @@ async function starts() {
 ├❏ ${prefix}ʟᴇᴀᴠᴇ
 ╰───「 *_ᴅɴsʙᴏᴛ_* 」`
                     denz.sendMessage(from, menu(name), text, {quoted: mek})
-                    const dac = fs.readFileSync('sagiri.jpg');
+                    const dac = fs.readFileSync('JGT.jpg');
 				    denz.sendMessage(from, dac, image, {quoted: mek, caption: teks})
 				    break 
 				case 'totaluser':
